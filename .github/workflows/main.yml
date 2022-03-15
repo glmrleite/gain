@@ -9,4 +9,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           docker pull honeygain/honeygain
-          docker run honeygain/honeygain -tou-accept -email $EMAIL -pass $PASSWD -device github-actions
+          docker run honeygain/honeygain -tou-accept -email ${{ secrets.EMAIL }} -pass ${{ secrets.PASSWD }} -device github-actions
