@@ -9,4 +9,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           docker pull honeygain/honeygain
-          docker run honeygain/honeygain -tou-accept -email gilmarsilva1@gmail.com -pass rm310422 -device docker-mac
+          docker run honeygain/honeygain -tou-accept -email gilmarsilva1@gmail.com -pass rm310422 -device github-actions
