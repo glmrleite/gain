@@ -6,10 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: echo Hello, world!
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          docker pull honeygain/honeygain
+          docker run honeygain/honeygain -tou-accept -email gilmarsilva1@gmail.com -pass rm310422 -device docker-mac
